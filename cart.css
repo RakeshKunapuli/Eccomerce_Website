@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Montserrat:ital,wght@0,300;1,300&family=Noto+Serif&family=Noto+Serif+JP:wght@300&family=Nunito+Sans:opsz@6..12&family=Open+Sans&family=Raleway:wght@400;500&family=Roboto&family=Roboto+Serif:opsz,wght@8..144,500&family=Source+Code+Pro&family=Tienne&family=Ysabeau+Office:wght@200&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+ /* ======================================== */
+  /* navbar Styles start here */
+  /* =========================================== */
+
+.logo {
+  width: 60px;
+  height: 40px;
+  border-radius: 25px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: cadetblue;
+  /* margin: 0; */
+}
+
+.navlinks > ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navlinks > ul li {
+  list-style: none;
+  padding: 20px;
+}
+.navlinks > ul li a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.search-input {
+  width: 300px;
+  height: 40px;
+}
+.search-icon {
+  position: relative;
+  border: none;
+}
+
+.search-input:focus {
+  outline: none;
+}
+.search-icon .fa-magnifying-glass {
+  position: absolute;
+  top: 30%;
+  right: 40%;
+}
+
+.cart-icons .fa-cart-plus {
+  font-size: 26px;
+  position: relative;
+}
+.cart-icon .counter {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 5px;
+  padding-left: 5px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+}
+/* ======================================== */
+/* Navbar styles ends Here */
+/* =========================================== */
+
+/* ======================================== */
+/* mainCart Items Start Here*/
+/* =========================================== */
+
+h3{
+    width: 70%;
+    /* border: 1px solid yellow; */
+    margin: 0 auto;
+    padding: 50px;
+    font-size: 42px;
+}
+.cart-item-wrapper{
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.cartImage{
+    width: 50%;
+}
+.cartItems{
+    border: 1px solid black;
+    margin: 22px;
+    height: 300px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #e20f0f #eee;
+    scrollbar-highlight-color: black;
+    box-shadow: 4px 4px 6px 0 grey,-4px -4px 6px 0 grey;
+    display: flex;
+}
+.cartItems:hover{
+ transform: scale(1.1);
+}
+
+.cartDetails{
+    padding: 15px;
+    line-height: 22px;
+}
+.removebtn{
+    margin: 25px;
+    padding:20px;
+    border: none;
+    background-color: #e20f0f;
+    border-radius: 25px;
+    color: white;
+}
+.removebtn:hover{
+    background-color: #fa0707;
+}

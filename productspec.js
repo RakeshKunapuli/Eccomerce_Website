@@ -89,6 +89,7 @@ updateCount()
  addTocart.innerText="AddToCart"
  addTocart.addEventListener('click',function(){
   var cart ={
+    id:`${product.id}`,
     brand:`${product.brand}`,
     image:`${product.thumbnail}`,
     price:`${product.price}`,
