@@ -88,6 +88,7 @@ h3{
     width: 60%;
     height: 100%;
     margin: 0 auto;
+    text-align: center;
 }
 
 .cartImage{
@@ -96,7 +97,7 @@ h3{
 .cartItems{
     border: 1px solid black;
     margin: 22px;
-    height: 300px;
+    height: 30%;
     overflow-y: auto;
     scrollbar-width: thin;
     scrollbar-color: #e20f0f #eee;
@@ -122,4 +123,66 @@ h3{
 }
 .removebtn:hover{
     background-color: #fa0707;
+}
+
+.viewItembtn{
+    color:white;
+    background-color:rgb(34, 34, 214);
+    border: none;
+    padding: 20px;
+    border-radius: 25px;
+    margin:12px;
+}
+.viewItembtn:hover{
+    background-color: blue;
+}
+
+.placeOrderDiv{
+width: 100%;
+margin: 0px auto;
+/* border: 1px solid red; */
+text-align: center;
+display: none;
+}
+
+
+.imageDiv{
+    width: 200px;
+    height: 200px;
+    background-color: #49d049;
+    border-radius: 50%;
+    padding: 40px;
+    box-sizing: border-box;
+    animation: popup 1s;
+    animation-duration: infinite;
+    margin:0px auto
+}
+
+@keyframes popup{
+0%{
+    transform: scale(1);
+}
+60%{
+    transform: scale(1.25);
+}
+100%{
+    transform: scale(1);
+}
+}
+.placeorderimage{
+    width: 100%;
+}
+
+h2{
+    margin-top: 20px;
+}
+
+.placeorderbtn{
+    background-color: #49d049;
+    color: black;
+    font-weight: 900;
+    border: none;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 30%;
 }
